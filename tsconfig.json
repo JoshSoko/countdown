@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "module": "ES2022",
+        "noImplicitAny": true,
+    },
+    "files": [
+        "countdown.ts"
+    ]
+}
