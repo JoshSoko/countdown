@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.timers {
+    display: flex;
+    width: 90vw;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    flex-direction: column;
+}
+
+.timers div {
+    width: 100px;
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-evenly;
+}
+
+.timeset {
+    width: 40px;
+}
+
+@media screen and (min-width: 400px) {
+
+    .timers {
+        flex-direction: row;
+    }
+    
+}
+
+@media screen and (min-width: 800px) {
+
+    .timers {
+
+        width: 719px;
+    }
+    
+}

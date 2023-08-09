@@ -3,14 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Test</h1>
-    <h3 id="timer"></h3>
+    <div class="container">
+        <h1>Timer</h1>
+
+        <div id="inputs">
+            <input type="number" id="daySet" class="timeset" min="0" max="999" value="0" required>
+            <input type="number" id="hourSet" class="timeset" min="0" max="24" value="0" required>
+            <input type="number" id="minSet" class="timeset" min="0" max="59" value="0" required>
+            <input type="number" id="secSet" class="timeset" min="0" max="59" value="0" required>
+        </div>
+
+        <div class="timers">
+            <div>
+                <h3 id="days">0</h3>
+                <h3> days</h3>
+            </div>
+            <div>
+                <h3 id="hours">0</h3>
+                <h3> hours</h3>
+            </div>
+
+            <div>
+                <h3 id="mins">0</h3>
+                <h3> minutes</h3>
+            </div>
+
+            <div>
+                <h3 id="secs">0</h3>
+                <h3> seconds</h3>
+            </div>
+        </div>
+
+        <button onclick="timerStart()">Start</button>
+    </div>
 
     <script src="countdown.js"></script>
-
-    <button onclick="timerStart()">Start</button>
+    
 </body>
 </html>
